@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prime Fitness - FAQs</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+  <style>
+    body {
+      background-color: #111;
+      color: white;
+    }
+
+    /* Navbar brand color */
+    .navbar-brand {
+      font-weight: bold;
+      color: rgb(125, 189, 15) !important;
+    }
+
+    /* Glowing page heading */
+    .faq-heading {
+      color: rgb(125, 189, 15);
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: bold;
+      text-shadow: 0 0 1px rgba(125, 189, 15, 0.8),
+        0 0 10px rgba(125, 189, 15, 0.6),
+        0 0 20px rgba(125, 189, 15, 0.4);
+      margin-bottom: 40px;
+    }
+
+    /* Glowing card for FAQs */
+    .faq-card {
+      background: #111;
+      padding: 25px;
+      border-radius: 1rem;
+      box-shadow: 0 8px 25px rgba(125, 189, 15, 0.6);
+      transition: all 0.3s ease-in-out;
+      margin-bottom: 20px;
+    }
+     @media (max-width: 576px) {
+  .faq-heading {
+    font-size: 1.8rem;
+  }
+}
+
+    .faq-card:hover {
+      box-shadow: 0 12px 35px rgba(151, 217, 37, 0.8);
+      transform: translateY(-5px);
+    }
+
+    /* Accordion Styling */
+    .accordion-item {
+      background: transparent;
+      border: none;
+      overflow: hidden;
+    }
+
+    .accordion-button {
+      background: transparent;
+      color: rgb(125, 189, 15);
+      font-weight: bold;
+      box-shadow: none;
+    }
+
+    .accordion-button:not(.collapsed) {
+      background: transparent;
+      color: rgb(151, 217, 37);
+      box-shadow: none;
+    }
+
+    .accordion-body {
+      color: white;
+    }
+    .accordion-button {
+  padding: 1rem 1.25rem; /* same spacing as body */
+}
+
+
+    /* Dark Dropdown Styling for all pages */
+    .dropdown-menu {
+      background-color: #111 !important;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .dropdown-menu .nav-link {
+      color: #fff !important;
+      padding: 8px 15px;
+      display: block;
+    }
+
+    .dropdown-menu .nav-link:hover {
+      background-color: rgba(125, 189, 15, 0.2);
+      color: rgb(151, 217, 37) !important;
+    }
+
+    /* Footer */
+    footer {
+      background: #111;
+      padding: 40px 0;
+      margin-top: 50px;
+    }
+
+    footer h5 {
+      color: rgb(125, 189, 15);
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+
+    footer .nav-link {
+      color: white !important;
+      transition: color 0.3s ease;
+    }
+
+    footer .nav-link:hover {
+      color: rgb(125, 189, 15) !important;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" data-aos="fade-down">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="assets/prime logo-1.png" alt="Prime Fitness Logo" width="50"
+          height="50"></a>
+      <a class="navbar-brand display-4 fw-bold" href="#" style="color: rgb(151, 217, 37); font-size: 25px;">Prime
+        Fitness</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Facilities</a>
+            <ul class="dropdown-menu">
+              <li><a class="nav-link" href="cycling.html">Cycling</a></li>
+              <li><a class="nav-link" href="swimming.html">Swimming</a></li>
+              <li><a class="nav-link" href="sports.html">Sports & Fitness</a></li>
+              <li><a class="nav-link" href="group.html">Group Exercises</a></li>
+              <li><a class="nav-link" href="equipments.html">Gym Equipments</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">About</a>
+            <ul class="dropdown-menu">
+              <li><a class="nav-link active" href="#">FAQ’s</a></li>
+              <li><a class="nav-link" href="contact.html">Enquiry Form</a></li>
+              <li><a class="nav-link" href="site-map.html">Site Map</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="membership.html">Membership</a></li>
+          <li class="nav-item"><a class="nav-link" href="salon.html">Salon & Spa</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- FAQ Section -->
+  <div class="container my-5">
+    <h2 class="faq-heading fs-2 fs-md-1">Frequently Asked Questions</h2>
+
+
+    <div class="accordion" id="faqAccordion">
+      <div class="faq-card accordion-item">
+        <h2 class="accordion-header" id="q1">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a1"
+            aria-expanded="false" aria-controls="a1">
+            What are the club timings?
+          </button>
+        </h2>
+        <div id="a1" class="accordion-collapse collapse" aria-labelledby="q1" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Our fitness club is open from 6:00 AM to 11:00 PM throughout the week.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-card accordion-item">
+        <h2 class="accordion-header" id="q2">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a2"
+            aria-expanded="false" aria-controls="a2">
+            Do you provide personal trainers?
+          </button>
+        </h2>
+        <div id="a2" class="accordion-collapse collapse" aria-labelledby="q2" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Yes, we have certified personal trainers available for customized fitness plans.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-card accordion-item">
+        <h2 class="accordion-header" id="q3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a3"
+            aria-expanded="false" aria-controls="a3">
+            Is there a trial membership available?
+          </button>
+        </h2>
+        <div id="a3" class="accordion-collapse collapse" aria-labelledby="q3" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            We offer a one-week trial membership so you can explore our facilities.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-card accordion-item">
+        <h2 class="accordion-header" id="q4">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a4"
+            aria-expanded="false" aria-controls="a4">
+            Do you have separate areas for ladies?
+          </button>
+        </h2>
+        <div id="a4" class="accordion-collapse collapse" aria-labelledby="q4" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Yes, we have exclusive sections and classes dedicated for ladies.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-card accordion-item">
+        <h2 class="accordion-header" id="q5">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a5"
+            aria-expanded="false" aria-controls="a5">
+            What facilities are included in membership?
+          </button>
+        </h2>
+        <div id="a5" class="accordion-collapse collapse" aria-labelledby="q5" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Access to gym equipment, swimming pool, cycling studio, and group classes.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+<!-- Footer -->
+<footer class="container-fluid text-white mt-5" style="background-color: #000;" data-aos="fade-up">
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-5 py-4 border-top">
+    <div class="col d-flex flex-column mb-3 mb-lg-0" data-aos="fade-right">
+      <div class="d-flex align-items-center mb-2">
+        <img src="assets/prime logo-1.png" alt="Prime Fitness Logo" width="60" height="60" class="me-2 img-fluid">
+        <p class="mb-0 text-white">Prime Fitness Club 2025 © All rights reserved</p>
+      </div>
+      <!-- Social Media Icons centered below logo -->
+      <div class="d-flex justify-content-center mt-3">
+        <a href="https://www.facebook.com/share/1FRNyacGdV/" target="_blank" class="text-white fs-4 me-3">
+          <i class="bi bi-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com/primefitnesspakistan?igsh=bmpxN3R3dzRsYmg=" target="_blank" class="text-white fs-4 me-3">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a href="https://www.youtube.com/c/PrimeFitnessusa" target="_blank" class="text-white fs-4">
+          <i class="bi bi-youtube"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="col"></div>
+
+    <div class="col" data-aos="fade-up" data-aos-delay="100">
+      <h5 style="color: rgb(125, 189, 15);">Explore</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-white">Home</a></li>
+        <li class="nav-item mb-2"><a href="index.html#about" class="nav-link p-0 text-white">About Us</a></li>
+        <li class="nav-item mb-2"><a href="cycling.html" class="nav-link p-0 text-white">Cycling</a></li>
+        <li class="nav-item mb-2"><a href="swimming.html" class="nav-link p-0 text-white">Swimming</a></li>
+        <li class="nav-item mb-2"><a href="sports.html" class="nav-link p-0 text-white">Sports & Fitness</a></li>
+      </ul>
+    </div>
+
+    <div class="col" data-aos="fade-up" data-aos-delay="200">
+      <h5 style="color: rgb(125, 189, 15);">Quick Links</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="group.html" class="nav-link p-0 text-white">Group Exercises</a></li>
+        <li class="nav-item mb-2"><a href="equipments.html" class="nav-link p-0 text-white">Gym Equipments</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">FAQ's</a></li>
+        <li class="nav-item mb-2"><a href="contact.html" class="nav-link p-0 text-white">Enquiry Form</a></li>
+        <li class="nav-item mb-2"><a href="site-map.html" class="nav-link p-0 text-white">Site Map</a></li>
+      </ul>
+    </div>
+
+    <div class="col" data-aos="fade-up" data-aos-delay="300">
+      <h5 style="color: rgb(125, 189, 15);">More</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="membership.html" class="nav-link p-0 text-white">Membership</a></li>
+        <li class="nav-item mb-2"><a href="salon.html" class="nav-link p-0 text-white">Salon & Spa</a></li>
+        <li class="nav-item mb-2"><a href="gallery.html" class="nav-link p-0 text-white">Gallery</a></li>
+        <li class="nav-item mb-2"><a href="contact.html" class="nav-link p-0 text-white">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

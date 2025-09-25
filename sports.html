@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prime Fitness Club — Sports & Fitness</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <style>
+    :root {
+      --prime: rgb(125,189,15);
+      --prime-soft: rgba(125,189,15,.6);
+      --bg: #0b0b0b;
+      --card: #151515;
+      --text: #fff;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    /* Navbar & Dropdown */
+    .dropdown-menu {
+      background-color: #111 !important;
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+    .dropdown-menu .nav-link {
+      color: #fff !important;
+      padding: 8px 15px;
+      display: block;
+    }
+    .dropdown-menu .nav-link:hover {
+      background-color: rgba(125,189,15,0.2);
+      color: rgb(151,217,37) !important;
+    }
+
+    h1.glow-text {
+      color: var(--prime);
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: bold;
+      text-shadow: 0 0 1px rgba(125, 189, 15, 0.8),
+                   0 0 10px rgba(125, 189, 15, 0.6),
+                   0 0 20px rgba(125, 189, 15, 0.4);
+      margin-bottom: 40px;
+    }
+    @media (max-width: 576px) { h1.glow-text { font-size: 1.8rem; } }
+
+    .section-rule {
+      width: 110px;
+      height: 4px;
+      border: none;
+      margin: 0 auto 34px;
+      background: var(--prime);
+      border-radius: 8px;
+      box-shadow: 0 2px 10px var(--prime-soft);
+    }
+ .plan-card .card-title {
+  color: rgb(151, 217, 37); /* lime green */
+  font-weight: 700;
+  letter-spacing: .3px;
+}
+
+.plan-card .card-text {
+  color: rgba(255, 255, 255, 0.85); /* slightly softer white */
+}
+
+
+    .plan-card {
+      background: var(--card);
+      border: 1px solid #1f1f1f;
+      border-radius: 18px;
+      overflow: hidden;
+      transition: transform .45s cubic-bezier(.2,.8,.2,1), box-shadow .45s, border-color .45s;
+      box-shadow: 0 10px 24px rgba(0,0,0,.35);
+      height: 100%;
+    }
+    .plan-card:hover {
+      transform: translateY(-10px) scale(1.02);
+      border-color: rgba(125,189,15,.35);
+      box-shadow: 0 18px 40px rgba(125,189,15,.25);
+    }
+    .plan-img {
+      height: 200px;
+      object-fit: cover;
+      width: 100%;
+      transition: transform .6s ease;
+    }
+    .plan-card:hover .plan-img { transform: scale(1.04); }
+
+    .plan-card .card-body { padding: 1.25rem 1.25rem 1.5rem; }
+    .plan-card .card-title { font-weight: 700; letter-spacing: .3px; }
+
+    .btn-prime {
+      background: var(--prime);
+      color: #0b0b0b;
+      border: none;
+      border-radius: 28px;
+      padding: .6rem 1.1rem;
+      font-weight: 700;
+      transition: transform .25s ease, box-shadow .25s ease;
+    }
+    .btn-prime:hover { transform: translateY(-2px) scale(1.03); box-shadow: 0 0 18px var(--prime-soft); }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" data-aos="fade-down">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="assets/prime logo-1.png" alt="Prime Fitness Logo" width="50" height="50"></a>
+      <a class="navbar-brand display-4 fw-bold" href="#" style="color: rgb(151, 217, 37); font-size: 25px;">Prime Fitness</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Facilities</a>
+            <ul class="dropdown-menu">
+              <li><a class="nav-link" href="cycling.html">Cycling</a></li>
+              <li><a class="nav-link" href="swimming.html">Swimming</a></li>
+              <li><a class="nav-link active" href="#">Sports & Fitness</a></li>
+              <li><a class="nav-link" href="group.html">Group Exercises</a></li>
+              <li><a class="nav-link" href="equipments.html">Gym Equipments</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">About</a>
+            <ul class="dropdown-menu">
+              <li><a class="nav-link" href="faqs.html">FAQ’s</a></li>
+              <li><a class="nav-link" href="contact.html">Enquiry Form</a></li>
+              <li><a class="nav-link" href="site-map.html">Site Map</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="membership.html">Membership</a></li>
+          <li class="nav-item"><a class="nav-link" href="salon.html">Salon & Spa</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Sports & Fitness Section -->
+  <section id="sports" class="container text-center py-5 mt-2">
+    <div class="mb-4" data-aos="fade-down">
+      <h1 class="fw-bold glow-text">Sports & Fitness</h1>
+      <hr class="section-rule">
+      <p class="text-white mx-auto" style="max-width:700px; font-size:1.1rem; line-height:1.6;">
+        <span style="color: rgb(151, 217, 37);">Play, train,</span> and <span style="color: rgb(151, 217, 37);">grow stronger in every way.</span> 
+        Our facilities combine modern equipment, <span style="color: rgb(151, 217, 37);">group training,</span> and sports spaces designed to <span style="color: rgb(151, 217, 37);">challenge your body, improve endurance,</span> and enhance overall wellness.
+      </p>
+    </div>
+
+   <div class="row g-4 row-cols-1 row-cols-md-2 row-cols-lg-3">
+      <!-- Card 1 -->
+      <div class="col" data-aos="fade-up">
+        <div class="card plan-card">
+          <img src="assets/strength-training.avif" alt="Strength Training" class="plan-img">
+          <div class="card-body">
+            <h5 class="card-title">Strength Training</h5>
+            <p class="card-text">Modern equipment for muscle growth and endurance.</p>
+            <a href="membership.html#membership" class="btn btn-prime">Join Now</a>
+          </div>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="col" data-aos="fade-up">
+
+        <div class="card plan-card">
+          <img src="assets/cardio.avif" alt="Cardio & Endurance" class="plan-img">
+          <div class="card-body">
+            <h5 class="card-title">Cardio & Endurance</h5>
+            <p class="card-text">Improve stamina and overall cardiovascular health.</p>
+            <a href="membership.html#membership" class="btn btn-prime">Join Now</a>
+          </div>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="col" data-aos="fade-up">
+
+        <div class="card plan-card">
+          <img src="assets/sport-facility.avif" alt="Sports Facilities" class="plan-img">
+          <div class="card-body">
+            <h5 class="card-title">Sports Facilities</h5>
+            <p class="card-text">Basketball, tennis, football, and more for all skill levels.</p>
+            <a href="membership.html#membership" class="btn btn-prime">Join Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col" data-aos="fade-up">
+
+        <div class="card plan-card">
+          <img src="assets/funstional.avif" alt="Functional Training" class="plan-img">
+          <div class="card-body">
+            <h5 class="card-title">Functional Training</h5>
+            <p class="card-text">Improve mobility, balance, and real-life strength skills.</p>
+            <a href="membership.html#membership" class="btn btn-prime">Join Now</a>
+          </div>
+        </div>
+      </div>
+      <!-- Card 5 -->
+      <div class="col" data-aos="fade-up">
+
+        <div class="card plan-card">
+          <img src="assets/group-training.avif" alt="Group Training" class="plan-img">
+          <div class="card-body">
+            <h5 class="card-title">Group Training</h5>
+            <p class="card-text">High-energy sessions to motivate and challenge you with peers.</p>
+            <a href="membership.html#membership" class="btn btn-prime">Join Now</a>
+          </div>
+        </div>
+      </div>
+      <!-- Card 6 -->
+      <div class="col" data-aos="fade-up">
+
+        <div class="card plan-card">
+          <img src="assets/yoga-recovery.avif" alt="Yoga & Recovery" class="plan-img">
+          <div class="card-body">
+            <h5 class="card-title">Yoga & Recovery</h5>
+            <p class="card-text">Stretch, recover, and strengthen your body mindfully.</p>
+            <a href="membership.html#membership" class="btn btn-prime">Join Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+<footer class="container-fluid text-white mt-5" style="background-color: #000;" data-aos="fade-up">
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-5 py-4 border-top">
+    <div class="col d-flex flex-column mb-3 mb-lg-0" data-aos="fade-right">
+      <div class="d-flex align-items-center mb-2">
+        <img src="assets/prime logo-1.png" alt="Prime Fitness Logo" width="60" height="60" class="me-2 img-fluid">
+        <p class="mb-0 text-white">Prime Fitness Club 2025 © All rights reserved</p>
+      </div>
+      <!-- Social Media Icons centered below logo -->
+      <div class="d-flex justify-content-center mt-3">
+        <a href="https://www.facebook.com/share/1FRNyacGdV/" target="_blank" class="text-white fs-4 me-3">
+          <i class="bi bi-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com/primefitnesspakistan?igsh=bmpxN3R3dzRsYmg=" target="_blank" class="text-white fs-4 me-3">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a href="https://www.youtube.com/c/PrimeFitnessusa" target="_blank" class="text-white fs-4">
+          <i class="bi bi-youtube"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="col"></div>
+
+    <div class="col" data-aos="fade-up" data-aos-delay="100">
+      <h5 style="color: rgb(125, 189, 15);">Explore</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-white">Home</a></li>
+        <li class="nav-item mb-2"><a href="index.html#about" class="nav-link p-0 text-white">About Us</a></li>
+        <li class="nav-item mb-2"><a href="cycling.html" class="nav-link p-0 text-white">Cycling</a></li>
+        <li class="nav-item mb-2"><a href="swimming.html" class="nav-link p-0 text-white">Swimming</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Sports & Fitness</a></li>
+      </ul>
+    </div>
+
+    <div class="col" data-aos="fade-up" data-aos-delay="200">
+      <h5 style="color: rgb(125, 189, 15);">Quick Links</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="group.html" class="nav-link p-0 text-white">Group Exercises</a></li>
+        <li class="nav-item mb-2"><a href="equipments.html" class="nav-link p-0 text-white">Gym Equipments</a></li>
+        <li class="nav-item mb-2"><a href="faqs.html" class="nav-link p-0 text-white">FAQ's</a></li>
+        <li class="nav-item mb-2"><a href="contact.html" class="nav-link p-0 text-white">Enquiry Form</a></li>
+        <li class="nav-item mb-2"><a href="site-map.html" class="nav-link p-0 text-white">Site Map</a></li>
+      </ul>
+    </div>
+
+    <div class="col" data-aos="fade-up" data-aos-delay="300">
+      <h5 style="color: rgb(125, 189, 15);">More</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="membership.html" class="nav-link p-0 text-white">Membership</a></li>
+        <li class="nav-item mb-2"><a href="salon.html" class="nav-link p-0 text-white">Salon & Spa</a></li>
+        <li class="nav-item mb-2"><a href="gallery.html" class="nav-link p-0 text-white">Gallery</a></li>
+        <li class="nav-item mb-2"><a href="contact.html" class="nav-link p-0 text-white">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1200, once: true, easing: 'ease-in-out' });
+  </script>
+</body>
+</html>

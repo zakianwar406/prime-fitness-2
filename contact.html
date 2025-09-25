@@ -1,0 +1,441 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prime Fitness Club — Contact</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <style>
+    :root {
+      --prime: rgb(125, 189, 15);
+      --prime-soft: rgba(125, 189, 15, .6);
+      --bg: #0b0b0b;
+      --card: #151515;
+      --text: #fff;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      overflow-x: hidden;
+    }
+
+    .dropdown-menu {
+      background-color: #111 !important;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .dropdown-menu .nav-link {
+      color: #fff !important;
+      padding: 8px 15px;
+      display: block;
+    }
+
+    .dropdown-menu .nav-link:hover {
+      background-color: rgba(125, 189, 15, 0.2);
+      color: rgb(151, 217, 37) !important;
+    }
+
+    h1.glow-text {
+      color: rgb(125, 189, 15);
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: bold;
+      text-shadow:
+        0 0 1px rgba(125, 189, 15, 0.8),
+        0 0 10px rgba(125, 189, 15, 0.6),
+        0 0 20px rgba(125, 189, 15, 0.4);
+      margin-bottom: 40px;
+      animation: glow 1.6s ease-in-out infinite alternate;
+    }
+     @media (max-width: 576px) {
+      h1.glow-text {
+        font-size: 1.8rem;
+      }
+    }
+
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 6px rgba(125, 189, 15, .35), 0 0 12px rgba(125, 189, 15, .2);
+      }
+
+      to {
+        text-shadow: 0 0 14px rgba(180, 255, 120, .7), 0 0 28px rgba(125, 189, 15, .5);
+      }
+    }
+
+    iframe {
+      min-height: 200px;
+      height: 100%;
+    }
+    .section-rule {
+      width: 110px;
+      height: 4px;
+      border: none;
+      margin: 0 auto 34px;
+      background: var(--prime);
+      border-radius: 8px;
+      box-shadow: 0 2px 10px var(--prime-soft);
+    }
+
+    .btn-prime {
+      background: var(--prime);
+      color: #0b0b0b;
+      border: none;
+      border-radius: 28px;
+      padding: .6rem 1.2rem;
+      font-weight: 700;
+      transition: transform .25s ease, box-shadow .25s ease, filter .25s ease;
+    }
+
+    .btn-prime:hover {
+      transform: translateY(-2px) scale(1.03);
+      box-shadow: 0 0 18px var(--prime-soft);
+      color: #0b0b0b;
+    }
+
+    [data-animate] {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity .9s ease, transform .9s ease, filter .9s ease;
+      will-change: transform, opacity;
+    }
+
+    [data-animate].active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    [data-animate="left"] {
+      transform: translateX(-60px);
+    }
+
+    [data-animate="right"] {
+      transform: translateX(60px);
+    }
+
+    [data-animate="up"] {
+      transform: translateY(50px);
+    }
+
+    [data-animate="zoom"] {
+      transform: scale(.85);
+    }
+
+    [data-animate="left"].active,
+    [data-animate="right"].active {
+      transform: translateX(0);
+    }
+
+    [data-animate="zoom"].active {
+      transform: scale(1);
+    }
+
+    .form-control.is-valid {
+      background-image: none !important;
+    }
+
+    small.text-success {
+      color: rgb(151, 217, 37) !important;
+    }
+
+    footer {
+      background: #111;
+      padding: 40px 0;
+      margin-top: 50px;
+    }
+
+    footer h5 {
+      color: rgb(125, 189, 15);
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+
+    footer .nav-link {
+      color: white !important;
+      transition: color 0.3s ease;
+    }
+
+    footer .nav-link:hover {
+      color: rgb(125, 189, 15) !important;
+    }
+  </style>
+</head>
+
+<body>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" data-aos="fade-down">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="assets/prime logo-1.png" alt="Prime Fitness Logo" width="50"
+            height="50"></a>
+        <a class="navbar-brand display-4 fw-bold" href="#" style="color: rgb(151, 217, 37); font-size: 25px;">Prime
+          Fitness</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Facilities</a>
+              <ul class="dropdown-menu">
+                <li><a class="nav-link" href="cycling.html">Cycling</a></li>
+                <li><a class="nav-link" href="swimming.html">Swimming</a></li>
+                <li><a class="nav-link" href="sports.html">Sports & Fitness</a></li>
+                <li><a class="nav-link" href="group.html">Group Exercises</a></li>
+                <li><a class="nav-link" href="equipments.html">Gym Equipments</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">About</a>
+              <ul class="dropdown-menu">
+                <li><a class="nav-link" href="faqs.html">FAQ’s</a></li>
+                <li><a class="nav-link active" href="#">Enquiry Form</a></li>
+                <li><a class="nav-link" href="site-map.html">Site Map</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="membership.html">Membership</a></li>
+            <li class="nav-item"><a class="nav-link" href="salon.html">Salon & Spa</a></li>
+            <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link active" href="#">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+    <!-- Enquiry & Contact -->
+
+    <section id="contact" class="my-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h1 class="mb-3 glow-text" data-animate="zoom">Enquiry & Contact Us</h1>
+          <hr class="section-rule">
+          <p class="mx-auto mb-4 muted" style="max-width: 720px; line-height: 1.8;" data-animate="up">
+            Have a question or need assistance? <span style="color: var(--prime); font-weight: 500;">Our team is here
+              for you.</span>
+            Reach out through the form below, and <span style="color: rgb(151, 217, 37);"> let us help you take the next
+              step in your fitness and wellness journey.</span>
+          </p>
+        </div>
+
+        <div class="row mt-5">
+          <!-- Left Column: Contact Info + Map -->
+          <div class="col-md-5 mb-4" data-animate="left">
+            <h4 class="fw-bold mb-3" style="color: var(--prime);">Contact Information</h4>
+            <p><i class="bi bi-telephone-fill" style="color: var(--prime);"></i> +92 3272007787</p>
+            <p><i class="bi bi-envelope-fill" style="color: var(--prime);"></i> janxp670@gmail.com</p>
+            <p><i class="bi bi-geo-alt-fill" style="color: var(--prime);"></i> Prime Fitness Club, North Nazimabad
+              Karachi</p>
+            <p><i class="bi bi-clock-fill" style="color: var(--prime);"></i> Mon - Sun: 6:00 AM - 10:00 PM</p>
+            <!-- Map iframe below contact info -->
+            <div class="mt-4">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2471.266921865775!2d67.03240851291238!3d24.927086136554323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f90157042d3%3A0x93d609e8bec9a880!2sAptech%20Computer%20Education%20North%20Nazimabad%20Center!5e0!3m2!1sen!2s!4v1756320696260!5m2!1sen!2s"
+                width="100%" height="200" style="border:0; border-radius:10px;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+          </div>
+          <!-- Right Column: Enquiry Form -->
+          <div class="col-md-7" data-animate="right">
+            <form onsubmit="return formValidation()">
+              <h4 class="fw-bold mb-3" style="color: var(--prime);">Enquiry Form</h4>
+              <div class="mb-3">
+                <label class="form-label text-white">Full Name</label>
+                <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
+                <small id="nameError" class="d-block mt-1"></small>
+              </div>
+              <div class="mb-3 text-white">
+                <label class="form-label">Email</label>
+                <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+                <small id="emailError" class="d-block mt-1"></small>
+              </div>
+              <div class="mb-3 text-white">
+                <label class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="3" placeholder="Type your enquiry"
+                  required></textarea>
+                <small id="messageError" class="d-block mt-1"></small>
+              </div>
+              <div id="successMessage" class="fw-bold mb-3"></div>
+              <div class="d-flex justify-content-center">
+                <button type="submit" class="btn btn-prime mt-3">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="container-fluid text-white mt-5" style="background-color: #000;" data-aos="fade-up">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-5 py-4 border-top">
+        <div class="col d-flex flex-column mb-3 mb-lg-0" data-aos="fade-right">
+          <div class="d-flex align-items-center mb-2">
+            <img src="assets/prime logo-1.png" alt="Prime Fitness Logo" width="60" height="60" class="me-2 img-fluid">
+            <p class="mb-0 text-white">Prime Fitness Club 2025 © All rights reserved</p>
+          </div>
+          <!-- Social Media Icons centered below logo -->
+          <div class="d-flex justify-content-center mt-3">
+            <a href="https://www.facebook.com/share/1FRNyacGdV/" target="_blank" class="text-white fs-4 me-3">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/primefitnesspakistan?igsh=bmpxN3R3dzRsYmg=" target="_blank"
+              class="text-white fs-4 me-3">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com/c/PrimeFitnessusa" target="_blank" class="text-white fs-4">
+              <i class="bi bi-youtube"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="col"></div>
+
+        <div class="col" data-aos="fade-up" data-aos-delay="100">
+          <h5 style="color: rgb(125, 189, 15);">Explore</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-white">Home</a></li>
+            <li class="nav-item mb-2"><a href="index.html#about" class="nav-link p-0 text-white">About Us</a></li>
+            <li class="nav-item mb-2"><a href="cycling.html" class="nav-link p-0 text-white">Cycling</a></li>
+            <li class="nav-item mb-2"><a href="swimming.html" class="nav-link p-0 text-white">Swimming</a></li>
+            <li class="nav-item mb-2"><a href="sports.html" class="nav-link p-0 text-white">Sports & Fitness</a></li>
+          </ul>
+        </div>
+
+        <div class="col" data-aos="fade-up" data-aos-delay="200">
+          <h5 style="color: rgb(125, 189, 15);">Quick Links</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="group.html" class="nav-link p-0 text-white">Group Exercises</a></li>
+            <li class="nav-item mb-2"><a href="equipments.html" class="nav-link p-0 text-white">Gym Equipments</a></li>
+            <li class="nav-item mb-2"><a href="faqs.html" class="nav-link p-0 text-white">FAQ's</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Enquiry Form</a></li>
+            <li class="nav-item mb-2"><a href="site-map.html" class="nav-link p-0 text-white">Site Map</a></li>
+          </ul>
+        </div>
+
+        <div class="col" data-aos="fade-up" data-aos-delay="300">
+          <h5 style="color: rgb(125, 189, 15);">More</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="membership.html" class="nav-link p-0 text-white">Membership</a></li>
+            <li class="nav-item mb-2"><a href="salon.html" class="nav-link p-0 text-white">Salon & Spa</a></li>
+            <li class="nav-item mb-2"><a href="gallery.html" class="nav-link p-0 text-white">Gallery</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Scroll reveal
+    const items = document.querySelectorAll('[data-animate]');
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+          obs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    items.forEach(el => obs.observe(el));
+
+    // Helper for validation
+    function validateField(input, errorEl, pattern, errorMessage, minLength = 0) {
+      const value = input.value.trim();
+
+      if (minLength > 0 && value.length < minLength) {
+        errorEl.textContent = errorMessage;
+        errorEl.className = "text-danger";
+        input.classList.add("is-invalid");
+        input.classList.remove("is-valid");
+        return false;
+      }
+
+      if (pattern && !pattern.test(value)) {
+        errorEl.textContent = errorMessage;
+        errorEl.className = "text-danger";
+        input.classList.add("is-invalid");
+        input.classList.remove("is-valid");
+        return false;
+      }
+
+      // ✅ Only "Looks good!" now
+      errorEl.textContent = "Looks good!";
+      errorEl.className = "text-success";
+      input.classList.remove("is-invalid");
+      input.classList.add("is-valid");
+      return true;
+    }
+
+    function formValidation() {
+      const form = document.querySelector("form");
+
+      const nameEl = document.getElementById("name");
+      const emailEl = document.getElementById("email");
+      const messageEl = document.getElementById("message");
+
+      const nameError = document.getElementById("nameError");
+      const emailError = document.getElementById("emailError");
+      const messageError = document.getElementById("messageError");
+      const successMessage = document.getElementById("successMessage");
+
+      successMessage.textContent = "";
+
+      const namePattern = /^[A-Z][a-zA-Z.' -]*$/;
+      const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+      let isValid = true;
+
+      if (!validateField(nameEl, nameError, namePattern, "❌ Name must start with a capital letter.", 3)) isValid = false;
+      if (!validateField(emailEl, emailError, emailPattern, "❌ Enter a valid email address.")) isValid = false;
+      if (!validateField(messageEl, messageError, null, "❌ Message must be at least 10 characters.", 10)) isValid = false;
+
+      if (isValid) {
+        successMessage.innerHTML = `<div class="alert alert-success">✅ Form submitted successfully!</div>`;
+        setTimeout(() => {
+          form.reset();
+          [nameEl, emailEl, messageEl].forEach(el => {
+            el.classList.remove("is-valid", "is-invalid");
+          });
+          [nameError, emailError, messageError].forEach(el => el.textContent = "");
+          successMessage.textContent = "";
+        }, 3000);
+      }
+      return false;
+    }
+
+    // Live validation
+    window.onload = () => {
+      const fields = [
+        { id: "name", pattern: /^[A-Z][a-zA-Z.' -]*$/, min: 3, msg: "❌ Name must start with a capital letter." },
+        { id: "email", pattern: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/, min: 0, msg: "❌ Enter a valid email address." },
+        { id: "message", pattern: null, min: 10, msg: "❌ Message must be at least 10 characters." }
+      ];
+
+      fields.forEach(field => {
+        const inputEl = document.getElementById(field.id);
+        const errorEl = document.getElementById(field.id + "Error");
+
+        inputEl.addEventListener("input", () => {
+          validateField(inputEl, errorEl, field.pattern, field.msg, field.min);
+        });
+
+        inputEl.addEventListener("blur", () => {
+          validateField(inputEl, errorEl, field.pattern, field.msg, field.min);
+        });
+      });
+    };
+  </script>
+</body>
+
+</html>
